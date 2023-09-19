@@ -1,4 +1,6 @@
 {
+  "author":"pachara lpgm",
+  "license":"MIT",
   "name": "fcc-learn-node-with-express",
   "version": "0.1.0",
   "dependencies": {
