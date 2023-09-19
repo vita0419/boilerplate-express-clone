@@ -1,7 +1,10 @@
 let express = require('express');
 let app = express();
 
-console.log("Hello World");
+app.all(req,res){
+ console.log("Hello World");
+}
+
 
 
 
