@@ -6,9 +6,9 @@ const staticPath = __dirname + "/public";
 app.use(express.static(staticPath));
 
 //2
-app.get("/", (req, res) => {
+/*app.get("/", (req, res) => {
     res.send("Hello Express");
-})
+})*/
 
 //3
 app.get("/", (req, res) => {
