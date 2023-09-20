@@ -3,7 +3,7 @@ let app = express();
 
 //4
 const staticPath = __dirname + "/public";
-app.use(staticPath, express.static());
+app.use(express.static('public'));
 
 //2
 /*app.get("/", (req, res) => {
