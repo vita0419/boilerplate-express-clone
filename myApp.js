@@ -3,8 +3,7 @@ let app = express();
 const path = require('path');
 
 //4
-app.use(express.static(path.join(__dirname, 'public')));
-console.log(path.join(__dirname, 'public'));
+app.use(express.static(__dirname + '/public'));
 //2
 /*app.get("/", (req, res) => {
     res.send("Hello Express");
