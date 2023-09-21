@@ -18,10 +18,11 @@ app.get("/public", (req, res) => {
 
 //5
 app.get("/json", (req, res) => {
+    let message = 'Hello json';
     if(process.env.MESSAGE_STYLE === 'uppercase'){
-        res.json({"message": "HELLO JSON"});
+        message = message.toLocaleUpperCase();
     }
-    res.json({"message": "Hello json"});
+    res.json({"message": message});
 })
 
 /*
