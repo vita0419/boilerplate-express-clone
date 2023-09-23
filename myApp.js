@@ -3,6 +3,7 @@ let app = express();
 const path = require('path');
 require('dotenv').config();
 
+//7
 app.use((req, res, next) => {
     console.log(`${req.method} ${req.path} - ${req.ip}`);
     next();
@@ -14,6 +15,13 @@ app.use("/public", express.static(__dirname + '/public'));
     res.send("Hello Express");
 })*/
 
+//8
+app.get('/now', function(req, res, next) {
+  req.time = new Date().toString();  // Hypothetical synchronous operation
+  next();
+}, function(req, res) {
+  res.send({time: req.time});
+});
 //3
 app.get("/public", (req, res) => {
     const indexPath = `${__dirname}/views/index.html`;
